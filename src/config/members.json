@@ -1,0 +1,82 @@
+[
+  {
+    "id": 100636815,
+    "name": "Oleksii Kaganovsky",
+    "username": "Oleksii Kaganovsky",
+    "email": "o.kaganovsky@noologic.ai",
+    "aliases": ["Олексій", "Леша", "Oleksii"],
+    "role": "CTO (Co-founder)"
+  },
+  {
+    "id": 100636814,
+    "name": "Vitalii Bilohan",
+    "username": "Vitalii Bilohan",
+    "email": "v.bilohan@noologic.ai",
+    "aliases": ["Віталій", "Vitalii", "Віталя"],
+    "role": "CEO (Co-founder)"
+  },
+  {
+    "id": 242567466,
+    "name": "Ihor Klym",
+    "username": "ihor klym",
+    "email": "klymihor16@gmail.com",
+    "aliases": ["Ігор", "Ihor", "Igor"],
+    "role": "розробник"
+  },
+  {
+    "id": 100636603,
+    "name": "Daniel Tsvilyniuk",
+    "username": "Daniel Tsvilyniuk",
+    "email": "csystems.dt@gmail.com",
+    "aliases": ["Даніель", "Daniel", "Даня"],
+    "role": "розробник"
+  },
+  {
+    "id": 242592856,
+    "name": "Олександр Гоян",
+    "username": "Олександр Гоян",
+    "email": "oleksandrhoianggwp@gmail.com",
+    "aliases": ["Саша Гоян", "Oleksandr", "Гоян"],
+    "role": "розробник"
+  },
+  {
+    "id": 100638296,
+    "name": "Alina Hurtskaiia",
+    "username": "Alina Hurtskaiia",
+    "email": "a.hurtskaiia@noologic.ai",
+    "aliases": ["Аліна", "Alina"],
+    "role": "PM"
+  },
+  {
+    "id": 100638820,
+    "name": "Ilya Senchuk",
+    "username": "Ilya Senchuk",
+    "email": "i.senchuk@noologic.ai",
+    "aliases": ["Ілля", "Ilya", "Illia"],
+    "role": "PM"
+  },
+  {
+    "id": 100678624,
+    "name": "Olha Zubach",
+    "username": "Olha Zubach",
+    "email": "o.scherbysik@gmail.com",
+    "aliases": ["Ольга", "Olha", "Оля"],
+    "role": "QA"
+  },
+  {
+    "id": 254495708,
+    "name": "Oles",
+    "username": "Oles",
+    "email": "oles.noologic@gmail.com",
+    "aliases": ["Олесь"],
+    "role": "джуніор розробник"
+  },
+  {
+    "id": 36458443,
+    "name": "Volosov Denys",
+    "username": "Volosov Denis",
+    "email": "volosovd@gmail.com",
+    "aliases": ["Денис", "Denis", "Denys", "Volosov"],
+    "exclude_from_counts": true
+  }
+]

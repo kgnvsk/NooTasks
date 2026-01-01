@@ -1,0 +1,5 @@
+.env
+.env.*
+bot.log
+node_modules/
+dist/
