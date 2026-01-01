@@ -3,3 +3,5 @@
 bot.log
 node_modules/
 dist/
+.claude/
+.cursor/
