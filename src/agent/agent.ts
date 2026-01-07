@@ -663,7 +663,44 @@ export class Agent {
           }
         }
       } catch (error: any) {
-        if (error?.status === 429) return "Забагато запитів. Почекайте хвилину.";
+        // Handle OpenAI API errors
+        const errorCode = error?.error?.code || error?.code;
+        const errorType = error?.error?.type || error?.type;
+        const errorMessage = error?.error?.message || error?.message || String(error);
+
+        logger.error("openai_api_error", {
+          status: error?.status,
+          code: errorCode,
+          type: errorType,
+          message: errorMessage
+        });
+
+        // Insufficient quota - out of credits
+        if (errorCode === 'insufficient_quota' || errorType === 'insufficient_quota') {
+          logger.error("openai_credits_depleted", { message: errorMessage });
+          return "❌ <b>КРИТИЧНА ПОМИЛКА:</b> Закінчились кошти на OpenAI API!\n\nПотрібно поповнити баланс на https://platform.openai.com/account/billing";
+        }
+
+        // Rate limit exceeded
+        if (error?.status === 429 || errorCode === 'rate_limit_exceeded') {
+          logger.warn("openai_rate_limit", { message: errorMessage });
+          return "⚠️ Забагато запитів до OpenAI. Почекайте хвилину і спробуйте знову.";
+        }
+
+        // Invalid API key
+        if (error?.status === 401 || errorCode === 'invalid_api_key') {
+          logger.error("openai_invalid_key", { message: errorMessage });
+          return "❌ Помилка авторизації OpenAI API. Перевірте OPENAI_API_KEY.";
+        }
+
+        // Model not found or deprecated
+        if (error?.status === 404 || errorCode === 'model_not_found') {
+          logger.error("openai_model_not_found", { message: errorMessage });
+          return "❌ Модель OpenAI не знайдена. Перевірте налаштування OPENAI_MODEL.";
+        }
+
+        // Generic OpenAI error
+        logger.error("openai_unknown_error", { error: errorMessage });
         throw error;
       }
     }
