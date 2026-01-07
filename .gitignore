@@ -1,5 +1,6 @@
 .env
 .env.*
+!.env.example
 bot.log
 node_modules/
 dist/
