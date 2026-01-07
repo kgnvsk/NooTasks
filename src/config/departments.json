@@ -1,140 +1,105 @@
 {
-  "_comment": "NooLogic Development - Projects as departments",
-
   "botox": {
-    "space_id": "90157121286",
     "list_ids": ["901515995413"]
   },
   "sales_manager": {
-    "space_id": "90157121286",
     "list_ids": ["901518374366"]
   },
   "rute": {
-    "space_id": "90157121286",
     "list_ids": ["901515995633"]
   },
   "sobeauty": {
-    "space_id": "90157121286",
     "list_ids": ["901516131113"]
   },
   "sorry_for_my_hair": {
-    "space_id": "90157121286",
     "list_ids": ["901517827641"]
   },
   "novyi_zir": {
-    "space_id": "90157121286",
     "list_ids": ["901515995657"]
   },
   "bc_curator": {
-    "space_id": "90157121286",
     "list_ids": ["901515995501"]
   },
   "sheriff": {
-    "space_id": "90157121286",
     "list_ids": ["901515995749"]
   },
   "kyt_group": {
-    "space_id": "90157121286",
     "list_ids": ["901515995434"]
   },
   "botox_ai_trainer": {
-    "space_id": "90157121286",
     "list_ids": ["901518609939"]
   },
   "logistic_ai_trainer": {
-    "space_id": "90157121286",
     "list_ids": ["901518609965"]
   },
   "buhta_rubaka": {
-    "space_id": "90157121286",
     "list_ids": ["901518609994"]
   },
   "cidi_group": {
-    "space_id": "90157121286",
     "list_ids": ["901516046963"]
   },
   "med_track": {
-    "space_id": "90157121286",
     "list_ids": ["901516035870"]
   },
   "ye_academy": {
-    "space_id": "90157121286",
     "list_ids": ["901517313538"]
   },
   "reflect_ai": {
-    "space_id": "90157121286",
     "list_ids": ["901517870588"]
   },
   "youtube_ai": {
-    "space_id": "90157121286",
     "list_ids": ["901517597807"]
   },
   "sheriff_outbound": {
-    "space_id": "90157121286",
     "list_ids": ["901516315097"]
   },
   "reels_grand_car": {
-    "space_id": "90157121286",
     "list_ids": ["901516935559"]
   },
 
   "noologic_agent": {
-    "space_id": "90157121316",
     "list_ids": ["901515995572"]
   },
   "widget": {
-    "space_id": "90157121316",
     "list_ids": ["901516653323"]
   },
   "demo_beauty": {
-    "space_id": "90157121316",
     "list_ids": ["901516693681"]
   },
   "ai_trainer_internal": {
-    "space_id": "90157121316",
     "list_ids": ["901517038006"]
   },
   "ai_sales_internal": {
-    "space_id": "90157121316",
     "list_ids": ["901517162525"]
   },
   "demo_b2b": {
-    "space_id": "90157121316",
     "list_ids": ["901518081470"]
   },
   "rnd": {
-    "space_id": "90157121316",
     "list_ids": ["901515995555"]
   },
 
   "onboarding": {
-    "space_id": "90157121414",
     "list_ids": ["901517160889"]
   },
   "meetings": {
-    "space_id": "90157121414",
     "list_ids": ["901515996002"]
   },
   "calls": {
-    "space_id": "90157121414",
     "list_ids": ["901515996057"]
   },
   "support": {
-    "space_id": "90157121414",
     "list_ids": ["901515996071"]
   },
   "internal_requests": {
-    "space_id": "90157121414",
     "list_ids": ["901515996073"]
   },
 
   "turbota_ai": {
-    "space_id": "90158698651",
     "list_ids": ["901518583200"]
   },
 
   "all_clients": {
-    "space_id": "90157121286",
     "list_ids": [
       "901515995413", "901518374366", "901515995633", "901516131113",
       "901517827641", "901515995657", "901515995501", "901515995749",
@@ -144,19 +109,15 @@
     ]
   },
   "voice_agents": {
-    "space_id": "90157121286",
     "list_ids": ["901515995434", "901518609939", "901518609965", "901518609994"]
   },
   "sales_projects": {
-    "space_id": "90157121286",
     "list_ids": ["901515995413", "901518374366", "901515995633", "901516131113", "901517827641", "901515995657"]
   },
   "internal": {
-    "space_id": "90157121316",
     "list_ids": ["901515995572", "901516653323", "901516693681", "901517038006", "901517162525", "901518081470", "901515995555"]
   },
   "operations": {
-    "space_id": "90157121414",
     "list_ids": ["901517160889", "901515996002", "901515996057", "901515996071", "901515996073"]
   }
 }
