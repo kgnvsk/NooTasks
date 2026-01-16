@@ -183,6 +183,8 @@ export class QueryProcessor {
    */
   private applyFilters(tasks: TaskData[], filterType: FilterType): TaskData[] {
     switch (filterType) {
+      case 'in_progress':
+        return this.filterInProgress(tasks);
       case 'overdue':
         return this.filterOverdue(tasks);
 
@@ -198,6 +200,26 @@ export class QueryProcessor {
       default:
         return tasks;
     }
+  }
+
+  /**
+   * Filter tasks that are in progress
+   */
+  private filterInProgress(tasks: TaskData[]): TaskData[] {
+    const progressKeywords = [
+      'in progress',
+      'progress',
+      'робот',
+      'в роботі',
+      'в процесі',
+      'in work',
+      'working',
+    ];
+
+    return tasks.filter(task => {
+      const statusName = this.getStatusString(task.status).toLowerCase();
+      return progressKeywords.some((kw) => statusName.includes(kw));
+    });
   }
 
   /**

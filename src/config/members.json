@@ -72,6 +72,14 @@
     "role": "джуніор розробник"
   },
   {
+    "id": 242592841,
+    "name": "Роман",
+    "username": "Роман",
+    "email": "roman.noologic@gmail.com",
+    "aliases": ["Роман", "Roman"],
+    "role": "розробник"
+  },
+  {
     "id": 36458443,
     "name": "Volosov Denys",
     "username": "Volosov Denis",

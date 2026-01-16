@@ -31,6 +31,7 @@ Determine what the user wants:
 - `overdue` - tasks past due date ("просроченные", "прострочені")
 - `stuck` - tasks without due date, in active status, older than 1 day ("зависшие", "завис")
 - `due_today` - tasks due today ("на сегодня", "на сьогодні")
+- `in_progress` - tasks in work ("in progress", "в процесі", "в роботі")
 
 ### Step 2: Map Names to IDs
 
@@ -57,7 +58,7 @@ load_and_filter_tasks({
   entityType: "person" | "department" | "all",
   entityId: "person_id" | "department_key",  // Required for person/department
   entityName: "Person Name" | "Department Name",
-  filterType: "none" | "overdue" | "stuck" | "due_today"
+  filterType: "none" | "overdue" | "stuck" | "due_today" | "in_progress"
 })
 ```
 

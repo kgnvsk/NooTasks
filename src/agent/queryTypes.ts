@@ -11,6 +11,7 @@ export type FilterType =
   | 'overdue'     // Tasks past due date
   | 'stuck'       // Tasks without due date and old
   | 'due_today'   // Tasks due today
+  | 'in_progress' // Tasks currently in progress
   | 'none';       // No filter
 
 export type OperationType =

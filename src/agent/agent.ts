@@ -158,8 +158,8 @@ export class Agent {
               },
               filterType: {
                 type: "string",
-                enum: ["none", "overdue", "stuck", "due_today"],
-                description: "Filter to apply: 'none' (all tasks), 'overdue' (past due), 'stuck' (no due date, old), 'due_today' (due today)"
+                enum: ["none", "overdue", "stuck", "due_today", "in_progress"],
+                description: "Filter to apply: 'none' (all tasks), 'overdue' (past due), 'stuck' (no due date, old), 'due_today' (due today), 'in_progress' (currently in work)"
               }
             },
             required: ["entityType", "filterType"]
@@ -460,6 +460,7 @@ export class Agent {
                 'stuck': '⏳ Зависли без руху',
                 'overdue': '🔴 Прострочені',
                 'due_today': '📅 На сьогодні',
+                'in_progress': '🟢 В роботі',
                 'none': '📋 Всі задачі'
               };
 
